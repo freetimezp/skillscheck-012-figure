@@ -1,18 +1,595 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#111322" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Project</title>
-</head>
+        <meta
+            name="description"
+            content="Test your HTML knowledge: figure, figcaption, image captions and semantic image structure."
+        />
 
-<body>
-    start
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <script src="./assets/js/main.js"></script>
-</body>
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
 
+        <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <title>Skills Check 012 — Figure & Caption</title>
+    </head>
+
+    <body>
+        <!-- Background atmosphere -->
+        <div class="ambient ambient-one" aria-hidden="true"></div>
+        <div class="ambient ambient-two" aria-hidden="true"></div>
+        <div class="noise-overlay" aria-hidden="true"></div>
+
+        <!-- Header -->
+        <header class="header" id="header">
+            <a href="./" class="brand" aria-label="Skills Check home">
+                <span class="brand-mark">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+                <span class="brand-text">
+                    <strong>FRAME</strong>
+                    <small>SKILLS ARCHIVE</small>
+                </span>
+            </a>
+
+            <nav class="header-nav" aria-label="Main navigation">
+                <a href="#overview" class="nav-link active">Overview</a>
+                <a href="#quiz" class="nav-link">Assessment</a>
+                <a href="#reference" class="nav-link">Quick reference</a>
+            </nav>
+
+            <div class="header-meta">
+                <span class="status-dot"></span>
+                <span>MODULE 012</span>
+            </div>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="mobile-nav"
+            >
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <!-- Mobile navigation -->
+        <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+            <a href="#overview" class="mobile-nav-link">Overview</a>
+            <a href="#quiz" class="mobile-nav-link">Assessment</a>
+            <a href="#reference" class="mobile-nav-link">Quick reference</a>
+        </nav>
+
+        <main>
+            <!-- Overview / Hero -->
+            <section class="hero section" id="overview">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="eyebrow">
+                            <span class="eyebrow-line"></span>
+                            <span>HTML KNOWLEDGE SERIES</span>
+                            <span class="eyebrow-index">012 / 1000</span>
+                        </div>
+
+                        <h1>
+                            Give your
+                            <span class="heading-accent">images</span>
+                            a story.
+                        </h1>
+
+                        <p class="hero-description">
+                            A good image shows something. A meaningful figure
+                            gives it context. Test your understanding of
+                            semantic image captions and HTML structure.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a href="#quiz" class="button-primary">
+                                <span>Start assessment</span>
+                                <span class="button-arrow">↗</span>
+                            </a>
+
+                            <div class="hero-duration">
+                                <span class="duration-icon">◷</span>
+                                <span>~8 MIN</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-stats">
+                            <div class="hero-stat">
+                                <strong>20</strong>
+                                <span>QUESTIONS</span>
+                            </div>
+
+                            <div class="stat-divider"></div>
+
+                            <div class="hero-stat">
+                                <strong>01</strong>
+                                <span>HTML TOPIC</span>
+                            </div>
+
+                            <div class="stat-divider"></div>
+
+                            <div class="hero-stat">
+                                <strong>∞</strong>
+                                <span>RETRIES</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-art">
+                        <div class="art-orbit orbit-one"></div>
+                        <div class="art-orbit orbit-two"></div>
+
+                        <div class="art-card">
+                            <div class="art-card-top">
+                                <span>FIG. 012</span>
+                                <span class="art-card-status"
+                                    >ARCHIVE / LIVE</span
+                                >
+                            </div>
+
+                            <div class="art-photo">
+                                <img
+                                    src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1000&q=85"
+                                    alt="Golden sunlight falling across a mountain landscape"
+                                />
+
+                                <span class="photo-overlay-number">01</span>
+                            </div>
+
+                            <div class="art-caption">
+                                <div>
+                                    <span class="caption-label">FIGURE 01</span>
+                                    <h2>Light studies</h2>
+                                    <p>Morning light across the landscape.</p>
+                                </div>
+
+                                <span class="caption-symbol">↗</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-note note-top">
+                            <span class="note-icon">⌘</span>
+                            <span>SEMANTIC<br />STRUCTURE</span>
+                        </div>
+
+                        <div class="floating-note note-bottom">
+                            <span class="note-dot"></span>
+                            <span>CONTEXT MATTERS</span>
+                        </div>
+
+                        <span class="art-coordinate coordinate-top">
+                            48°51'24"N
+                        </span>
+
+                        <span class="art-coordinate coordinate-bottom">
+                            IMAGE / CAPTION
+                        </span>
+                    </div>
+                </div>
+
+                <div class="hero-bottom">
+                    <span>SCROLL TO EXPLORE</span>
+                    <span class="scroll-line"></span>
+                    <span>LEARNING MODULE 012</span>
+                </div>
+            </section>
+
+            <!-- Concept overview -->
+            <section class="concept-section section" id="reference">
+                <div class="section-heading">
+                    <div>
+                        <span class="section-kicker">01 — THE KNOWLEDGE</span>
+                        <h2>Understand the <span>structure.</span></h2>
+                    </div>
+
+                    <p>
+                        Before you begin, make sure you understand the role of
+                        each element in a semantic image figure.
+                    </p>
+                </div>
+
+                <div class="concept-grid">
+                    <article class="concept-card concept-figure">
+                        <span class="concept-number">01</span>
+                        <div class="concept-icon">⌗</div>
+                        <h3>&lt;figure&gt;</h3>
+                        <p>
+                            Groups self-contained content such as an image,
+                            illustration, diagram or code example.
+                        </p>
+                        <span class="concept-tag">SEMANTIC CONTAINER</span>
+                    </article>
+
+                    <article class="concept-card concept-caption">
+                        <span class="concept-number">02</span>
+                        <div class="concept-icon">≡</div>
+                        <h3>&lt;figcaption&gt;</h3>
+                        <p>
+                            Provides a caption or legend describing the content
+                            of its parent figure.
+                        </p>
+                        <span class="concept-tag">VISIBLE CONTEXT</span>
+                    </article>
+
+                    <article class="concept-card concept-alt">
+                        <span class="concept-number">03</span>
+                        <div class="concept-icon">◎</div>
+                        <h3>alt attribute</h3>
+                        <p>
+                            Supplies alternative text for an image when it
+                            cannot be seen or loaded.
+                        </p>
+                        <span class="concept-tag">IMAGE ALTERNATIVE</span>
+                    </article>
+                </div>
+
+                <div class="reference-code">
+                    <div class="reference-code-header">
+                        <div class="code-file">
+                            <span class="code-file-dot"></span>
+                            <span>example.html</span>
+                        </div>
+
+                        <span class="code-label">SEMANTIC HTML</span>
+                    </div>
+
+                    <pre><code><span class="code-tag">&lt;figure&gt;</span>
+    <span class="code-tag">&lt;img</span>
+        <span class="code-attr">src</span>=<span class="code-string">"landscape.jpg"</span>
+        <span class="code-attr">alt</span>=<span class="code-string">"Sunrise over the mountains"</span>
+    <span class="code-tag">/&gt;</span>
+
+    <span class="code-tag">&lt;figcaption&gt;</span>
+        Sunrise over the mountain valley.
+    <span class="code-tag">&lt;/figcaption&gt;</span>
+<span class="code-tag">&lt;/figure&gt;</span></code></pre>
+
+                    <div class="reference-code-footer">
+                        <span>ONE FIGURE · ONE CAPTION</span>
+                        <span class="code-footer-accent">HTML5</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quiz -->
+            <section class="quiz-section section" id="quiz">
+                <div class="section-heading quiz-heading">
+                    <div>
+                        <span class="section-kicker">02 — THE ASSESSMENT</span>
+                        <h2>Test your <span>knowledge.</span></h2>
+                    </div>
+
+                    <p>
+                        Read carefully, choose your answers and learn from every
+                        question.
+                    </p>
+                </div>
+
+                <!-- Quiz intro -->
+                <div class="quiz-intro" id="quiz-intro">
+                    <div class="quiz-intro-visual">
+                        <div class="intro-frame">
+                            <div class="intro-frame-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=85"
+                                    alt="Sunlight passing through a forest"
+                                />
+                            </div>
+
+                            <span class="intro-frame-label">FIG. 001</span>
+                            <span class="intro-frame-caption">
+                                A visual needs context.
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="quiz-intro-content">
+                        <span class="intro-label">YOUR MISSION</span>
+                        <h3>Think beyond the image.</h3>
+
+                        <p>
+                            Explore 20 questions about figure, figcaption and
+                            accessible image descriptions. Some questions have
+                            multiple correct answers.
+                        </p>
+
+                        <ul class="quiz-features">
+                            <li>
+                                <span>01</span>
+                                <span>Randomized questions and answers</span>
+                            </li>
+                            <li>
+                                <span>02</span>
+                                <span>Instant feedback with explanations</span>
+                            </li>
+                            <li>
+                                <span>03</span>
+                                <span>Review your answers at the end</span>
+                            </li>
+                        </ul>
+
+                        <button
+                            class="button-primary quiz-start"
+                            id="start-quiz"
+                            type="button"
+                        >
+                            <span>Begin the challenge</span>
+                            <span class="button-arrow">↗</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Active quiz -->
+                <div class="quiz-app hidden" id="quiz-app">
+                    <div class="quiz-topbar">
+                        <div class="quiz-progress-info">
+                            <span class="quiz-label">YOUR PROGRESS</span>
+                            <strong id="progress-text">QUESTION 01 / 20</strong>
+                        </div>
+
+                        <div class="quiz-progress-track">
+                            <div
+                                class="quiz-progress-fill"
+                                id="progress-fill"
+                            ></div>
+                        </div>
+
+                        <div class="quiz-score">
+                            <span>POINTS</span>
+                            <strong id="live-score">00</strong>
+                        </div>
+                    </div>
+
+                    <div class="question-layout">
+                        <div class="question-main">
+                            <div class="question-meta">
+                                <span
+                                    class="question-category"
+                                    id="question-category"
+                                >
+                                    HTML STRUCTURE
+                                </span>
+
+                                <span class="question-type" id="question-type">
+                                    SINGLE CHOICE
+                                </span>
+                            </div>
+
+                            <h3 class="question-title" id="question-title">
+                                Loading question...
+                            </h3>
+
+                            <p
+                                class="question-description"
+                                id="question-description"
+                            >
+                                Choose the correct answer below.
+                            </p>
+
+                            <div
+                                class="question-code hidden"
+                                id="question-code"
+                            >
+                                <div class="question-code-header">
+                                    <span>HTML EXAMPLE</span>
+                                    <span>CODE / 01</span>
+                                </div>
+
+                                <pre><code id="question-code-content"></code></pre>
+                            </div>
+
+                            <div class="answer-list" id="answer-list"></div>
+
+                            <div
+                                class="feedback-panel hidden"
+                                id="feedback-panel"
+                                aria-live="polite"
+                            >
+                                <div class="feedback-header">
+                                    <span
+                                        class="feedback-icon"
+                                        id="feedback-icon"
+                                        >✓</span
+                                    >
+
+                                    <div>
+                                        <strong id="feedback-title"
+                                            >Correct answer</strong
+                                        >
+                                        <span id="feedback-subtitle"
+                                            >Well done!</span
+                                        >
+                                    </div>
+                                </div>
+
+                                <p id="feedback-explanation"></p>
+
+                                <div
+                                    class="feedback-tip"
+                                    id="feedback-tip"
+                                ></div>
+                            </div>
+
+                            <div class="question-actions">
+                                <span class="keyboard-hint">
+                                    SELECT AN ANSWER TO CONTINUE
+                                </span>
+
+                                <button
+                                    class="button-primary next-question"
+                                    id="next-question"
+                                    disabled
+                                >
+                                    <span>Next question</span>
+                                    <span class="button-arrow">→</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <aside class="question-aside">
+                            <div class="aside-card">
+                                <span class="aside-kicker">COLLECTION</span>
+                                <div class="aside-index">012</div>
+                                <h4>Image & context</h4>
+                                <p>
+                                    Every element has a role. Every detail can
+                                    improve meaning.
+                                </p>
+                                <div class="aside-line"></div>
+                                <span class="aside-footer"
+                                    >FRAME / HTML SERIES</span
+                                >
+                            </div>
+
+                            <div class="aside-progress">
+                                <span>COMPLETION</span>
+                                <strong id="completion-percent">0%</strong>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+
+                <!-- Results -->
+                <div class="results-panel hidden" id="results-panel">
+                    <div class="results-header">
+                        <span class="section-kicker"
+                            >03 — YOUR PERFORMANCE</span
+                        >
+                        <div class="results-symbol" id="results-symbol">✦</div>
+                        <h3 id="results-title">Assessment complete.</h3>
+                        <p id="results-message">
+                            Your learning journey continues.
+                        </p>
+                    </div>
+
+                    <div class="results-stats">
+                        <div class="result-stat result-main">
+                            <span>YOUR SCORE</span>
+                            <strong id="result-score">0/20</strong>
+                            <small id="result-percentage">0% accuracy</small>
+                        </div>
+
+                        <div class="result-stat">
+                            <span>CORRECT</span>
+                            <strong id="result-correct">0</strong>
+                        </div>
+
+                        <div class="result-stat">
+                            <span>INCORRECT</span>
+                            <strong id="result-incorrect">0</strong>
+                        </div>
+
+                        <div class="result-stat">
+                            <span>TIME</span>
+                            <strong id="result-time">00:00</strong>
+                        </div>
+                    </div>
+
+                    <div class="results-record">
+                        <div>
+                            <span>PERSONAL BEST</span>
+                            <strong id="best-score">0/20</strong>
+                        </div>
+
+                        <span class="record-icon">↗</span>
+                    </div>
+
+                    <div class="results-actions">
+                        <button
+                            class="button-primary"
+                            id="restart-quiz"
+                            type="button"
+                        >
+                            <span>Try again</span>
+                            <span aria-hidden="true">↗</span>
+                        </button>
+
+                        <button
+                            class="button-secondary"
+                            id="review-answers"
+                            type="button"
+                        >
+                            Review answers
+                        </button>
+                    </div>
+
+                    <div class="review-list hidden" id="review-list">
+                        <div class="review-heading">
+                            <span class="section-kicker">ANSWER BREAKDOWN</span>
+                            <h4>What you learned.</h4>
+                        </div>
+
+                        <div id="review-items"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Closing section -->
+            <section class="closing-section section">
+                <div class="closing-content">
+                    <span class="section-kicker">THE NEXT FRAME</span>
+                    <h2>
+                        Keep building<br />
+                        <span>your perspective.</span>
+                    </h2>
+
+                    <p>
+                        Understanding HTML is more than remembering tags. It is
+                        knowing how to give content meaning.
+                    </p>
+
+                    <a
+                        href="https://freetimezp.github.io/roadmap-web-coding/"
+                        class="button-secondary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Explore the roadmap <span>↗</span>
+                    </a>
+                </div>
+
+                <div class="closing-decoration" aria-hidden="true">
+                    <span>012</span>
+                    <span>FRAME / ARCHIVE</span>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="./" class="footer-brand">
+                <span class="brand-mark">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                FRAME
+            </a>
+
+            <p>AN HTML LEARNING EXPERIENCE</p>
+
+            <span class="footer-copy">
+                © <span id="current-year"></span> · MODULE 012
+            </span>
+        </footer>
+
+        <script src="./assets/js/data.js" defer></script>
+        <script src="./assets/js/main.js" defer></script>
+    </body>
 </html>
